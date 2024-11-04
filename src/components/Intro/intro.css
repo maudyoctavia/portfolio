@@ -1,0 +1,64 @@
+#intro {
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.introContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 2rem;
+}
+
+.bg {
+    position: absolute;
+    top: -4rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+    width: auto;
+}
+
+.introContent {
+    max-width: 50%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.hello {
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.introText {
+    font-size: 3rem;
+}
+
+.introName {
+    color: black;
+    font-weight: bold;
+}
+
+.introPara {
+    font-size: medium;
+    font-weight: 100;
+    line-height: 1.5;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width:480px) {
+    .bg{
+        right: -20vw;
+    }
+}
